@@ -30,7 +30,7 @@ Welcome to my profolio website,showcasing  my skills and experiences in web deve
 
 ## Deployement Link
 
-This portfolio website is deployed at https://mncedisi95.github.io/Portfolio/index
+This portfolio website is deployed at https://mncedisi95.github.io/Portfolio/
 
 ## Author
 
