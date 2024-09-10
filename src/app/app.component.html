@@ -1,7 +1,28 @@
-<app-navbar></app-navbar>
-<main>
-  <app-index></app-index>
-  <router-outlet></router-outlet>
+<nav class="navbar">
+    <div class="container">
+        <a class="logo" href="#">Masondo</a>
+        <ul class="nav">
+            <li class="list-item">
+                <a class="page-link" routerLink="/index" ariaCurrentWhenActive="page">Home</a>
+            </li>
+            <li class="list-item">
+                <a class="page-link" routerLink="/about"ariaCurrentWhenActive="page">About</a>
+            </li>
+            <li class="list-item">
+                <a class="page-link" routerLink="/portfolio" ariaCurrentWhenActive="page">Portfolio</a>
+            </li>
+            <li class="list-item">
+                <a  class="page-link" routerLink="/contact" ariaCurrentWhenActive="page">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="main">
+
 </main>
+
+<router-outlet/>
+
 <app-footer></app-footer>
 
