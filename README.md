@@ -1,27 +1,42 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+Welcome to my profolio website,showcasing  my skills and experiences in web developement and design.  
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Project Showcase - A curated selection of my best projects, with descriptions, images and links to my repository.
+2. Skills - A list of my technical skills including programming.
+3. Experience - A list of my work experience, with descriptions and achievements.
+4. Contact - A contact form and links to my social media profiles. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used and Software Tools
 
-## Build
+1. Front-End - HTML5 and CSS.
+2. Deployement - GitHub Pages. 
+3. Software tools - Visual Studio Code and GitHub.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+1. Clone the repository: git clone 
+2. Install dependencies: npm install.
+3. Start the development server: npm start.
+4. Build and Deploy: npm run build and npm run deploy.
+5. Switch to a specific branch: git checkout <branch-name>
+6. Pull changes from remote repository: git pull <branch-name>
+7. Run tests for the project: npm run test.
+8. Run linter checks for code quality: npm run link.
+9. Generate documentation for the project: npm run docs.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deployement Link
 
-## Running end-to-end tests
+This portfolio website is deployed at 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Author
 
-## Further help
+Name: Mncedisi Masondo
+Email: mncedisimasondo4@gmail.com
+Linkedin Profile: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Licence
+
