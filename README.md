@@ -18,25 +18,25 @@ Welcome to my profolio website,showcasing  my skills and experiences in web deve
 
 ## Getting Started
 
-1. Clone the repository: git clone 
+1. Clone the repository: git clone https://github.com/Mncedisi95/Portfolio.git
 2. Install dependencies: npm install.
 3. Start the development server: npm start.
 4. Build and Deploy: npm run build and npm run deploy.
-5. Switch to a specific branch: git checkout <branch-name>
-6. Pull changes from remote repository: git pull <branch-name>
+5. Switch to a specific branch: git checkout master
+6. Pull changes from remote repository: git pull master
 7. Run tests for the project: npm run test.
 8. Run linter checks for code quality: npm run link.
 9. Generate documentation for the project: npm run docs.
 
 ## Deployement Link
 
-This portfolio website is deployed at 
+This portfolio website is deployed at https://mncedisi95.github.io/Portfolio/index
 
 ## Author
 
-Name: Mncedisi Masondo
-Email: mncedisimasondo4@gmail.com
-Linkedin Profile: 
+* Name: Mncedisi Masondo
+* Email: mncedisimasondo4@gmail.com
+* Linkedin Profile: https://www.linkedin.com/in/mncedisi-masondo-9791b2189/ 
 
-## Licence
+
 
