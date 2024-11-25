@@ -845,133 +845,6 @@ button.bg-primary:focus {
     visibility: visible;
 }
 
-.portfolio.wrapper{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-
-.portfolio.wrapper .portfolio-card {
-    display: block;
-    border: 1px solid #dee2e6;
-    padding: 30px 15px;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    background: #fff;
-    -webkit-transition: all, 0.3s;
-    transition: all, 0.3s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .portfolio-wrapper .portfolio-card {
-      -webkit-transition: none;
-      transition: none;
-    }
-}
-
-.portfolio-wrapper .portfolio-card-header .portfolio-card-icon {
-    width: 70px;
-    margin-bottom: 25px;
-}
-
-.portfolio-card-body{
-        text-align: left;
-		border: 1px solid border-color;
-		background: #fff;
-		padding: 20px 20px 20px 60px;
-		border-radius: card-border-radius;
-}
-
-.portfolio-card-body1{
-    text-align: center;
-    border: 1px solid border-color;
-    background: #fff;
-    padding: 20px 20px 20px 60px;
-    border-radius: card-border-radius;
-}
-
-.portfolio-card-body2{
-    text-align: right;
-    border: 1px solid border-color;
-    background: #fff;
-    padding: 20px 20px 20px 60px;
-    border-radius: card-border-radius;
-}
-
-.portfolio-wrapper .portfolio-card-footer {
-    margin: 15px 0;
-  }
-  
-.portfolio-wrapper .portfolio-card-footer span {
-    font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
-    font-weight: 600;
-    opacity: .8;
-}
-  
-.portfolio-wrapper .portfolio-card-footer span:first-child {
-    position: relative;
-    right: -6px;
-    top: -6px;
-    font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1300 - 300)));
-}
-  
-.portfolio-wrapper .portfolio-card-title {
-    margin-bottom: 15px;
-    font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
-}
-  
-.portfolio-wrapper .portfolio-card-list p {
-    margin-bottom: 12px;
-    font-weight: 500;
-    opacity: .6;
-}
-  
-.portfolio-wrapper .portfolio-card-list p i {
-    color: #ec185d;
-}
-  
-.portfolio-wrapper .portfolio-card:hover {
-    -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-            transform: translateY(-5px);
-    border-radius: 0 !important;
-}
-  
-.portfolio-wrapper .portfolio-card:first-child {
-      border-radius: 0 0 0 0;
-}
-
-.portfolio-wrapper .portfolio-card:nth-child(2) {
-      margin-left: -1px;
-      margin-right: -1px;
-}
-
-.portfolio-wrapper .portfolio-card:last-child {
-      border-radius: 0 0 0 0;
-}
-
-@media (max-width: 767.98px) {
-      .portfolio-wrapper {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column;
-      }
-
-      .portfolio-card {
-          border-radius: 0 !important;
-          margin: 0 0 15px 0 !important;
-          width: 100%;
-      }
-}
-  
 .pt-0,
 .py-0 {
   padding-top: 0 !important;
@@ -1333,3 +1206,71 @@ p {
       margin-top: 15px;
     }
 }
+
+
+/*  =======================================
+          Start Resume Section Style
+    ======================================= */            
+
+.resume-card{
+
+}
+
+.resume-header{
+    padding: 0.75rem 1.25rem;;
+
+}
+
+.resume-body{
+    padding: 1.25rem;
+    flex: 1 1 auto;
+}
+
+/*  =======================================
+          End of Project Section Style
+    ======================================= */            
+
+
+/*  =======================================
+                Project Section
+    ======================================= */            
+
+.project-container{
+    overflow-y: auto;
+    display: flex;
+}    
+
+.portfolio-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    padding: 26px;
+    margin: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.portfolio-card {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    background: #fff;
+    height: auto;
+    width: 305px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.portfolio-card p{
+    font-size: 12px;
+}
+
+.portfolio-card:hover{
+    cursor: pointer;
+    background-color: #f3f2ee;
+}
+
+/* ===============================
+       End of Project Section
+   =============================== */    

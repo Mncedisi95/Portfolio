@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "category": "Project 1 - Group Project",
+        "title": "Web Development Project - Job Post/Application System",
+        "technologies": "Technologies used are HTML, CSS, Java ,C# with SQL Server Database",
+        "description": "Designed and developed a fully functional Job Application Management System using HTML, CSS, C# and SQL.Features are Authentication and Authorization, Email Notifications, Mobile Optimization, Reporting And Analytics, Company Information, Resume and Cover Letter Upload, Tracking Status,Profile Creation, Application Filtering and Sorting, Job Expiration date, Requirements and Qualifications, Location and Remote Work options, Job Categories and Job Description.",
+        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows,Easy Job search, Effective job posting, data driven decision making.",
+        "githubLink": "https://github.com/IFMTYP-2020/team36"
+    },
+    {
+        "id": 2,
+        "category": "Project 2 - Personal Project",
+        "title": "Web Development Project- eWaste Collection Management System",
+        "technologies": "Technologies used are HTML, CSS,C# with SQL Server Database.",
+        "description": "Designed and developed a fully functional eWaste Collection Management System using HTML, CSS, C# and SQL server Database. Features are Authentication and Authorization, Reporting And Analytics, eWaste Collection request, Scheduling and Routing, Customer Profile and Notifcations, Intergration with recycling facilities, Weight and Volume Tracking, Vehicle and driver Management.",
+        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows",
+        "githubLink": "https://github.com/Mncedisi95/Train-Management-System"
+    },
+    {
+        "id": 3,
+        "category": "Project - Group Project",
+        "title": "Web Development Project - Ecommerce Website",
+        "technologies": "Technologies used are HTML, CSS,C# with SQL Server Database.",
+        "description": "Designed and developed a fully functional Ecommerce Website using HTML, CSS, C# and SQL Server Database.Features are Authentication and Authorization, Reporting And Analytics, Product catalog with Filtering and Sorting,Shopping cart,checkout process Profile creation.",
+        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows",
+        "githubLink": ""
+    }
+]
