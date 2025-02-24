@@ -1,98 +1,148 @@
-.container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media(min-width: 576px){
-    .container{
-        max-width: 540px;
+/* Footer Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media(min-width: 768px){
-    .container{
-        max-width: 720px;
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media(min-width: 992px){
-    .container{
-        max-width: 960px;
-    }
-}
 
-@media(min-width: 1200px){
-    .container{
-        max-width: 1140px;
-    }
-}
-
-.footer{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    min-height: 70px;
-    border-top: 1px solid #dee2e6;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.footer p,
-.footer .social-links {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-basis:0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-}
-
-.footer a, .footer p {
-    color: #393e46;
-    padding: 4px 0;
-    display: inline-block;
-    margin: 0;
-}
-
-.footer .social-links {
-    margin-left: auto;
-}
-
-.footer .social-links a {
-    padding: 0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    text-align: center;
-    border: 2px solid #6c757d;
-    color: #6c757d;
-}
-
-.footer .social-links a:hover {
-    background: #695aa6;
-    border-color: #695aa6;
+.footer {
+    background: linear-gradient(135deg, #012A4A, #025E73); /* Modern gradient */
     color: #fff;
-    text-decoration: none;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
 }
-  
-@media (max-width: 767.98px) {
-    .footer {
-      padding: 15px 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-    }
-    .footer .social-links {
-      margin-top: 15px;
-    }
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-about,
+.footer-nav,
+.footer-social,
+.footer-contact {
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.3s;
+    opacity: 0; 
+    animation-fill-mode: forwards; 
+}
+
+.footer-about h3 {
+    font-size: 1.8rem;
+    font-family: "Baloo Paaji", cursive;
+    color: #00a3a3;
+}
+
+.footer-about p {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer-nav h4,
+.footer-social h4,
+.footer-contact h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color:  #00a3a3;
+    font-family: "Baloo Paaji", cursive;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin: 8px 0;
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.footer-nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.footer-nav ul li a:hover {
+    color:  #00a3a3;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.social-icons a {
+    color: #ddd;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #00a3a3;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer-contact p {
+    color: #ddd;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.footer-contact i {
+    color:  #fff;
+    font-size: 1.2rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top:  1px solid #fff;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }

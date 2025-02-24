@@ -1,57 +1,53 @@
-header,
-section {
-    display: block;
-}
-
+section,
 h2,
-h6 {
-    margin-top: 0;
-    margin-bottom: 8px;
+h6,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     color: #695aa6;
     text-decoration: none;
-    background-color: transparent;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #493f75;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p {
-    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
-    font-weight: 100;
-    opacity: 1;
-    color: #111;
-    letter-spacing: .6px;
-}
-
-
-h2,
-h6 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    font-family: 'Baloo Paaji', cursive;
-    color: #695aa6;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
 h2 {
     font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #695aa6;
+    text-align: center;
+    font-family: 'Baloo Paaji', cursive;
+    line-height: 1.2;
 }
 
 h6 {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: #493f75;
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .text-center {
@@ -59,13 +55,18 @@ h6 {
 }
 
 .section {
-    padding: 70px 10px;
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section .section-subtitle {
-    margin-bottom: 6px;
     font-weight: 400;
-    opacity: .6;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
 }
 
 /*  ======================================
@@ -73,15 +74,17 @@ h6 {
     ======================================  */
 
 .header-mini {
-    min-height: 10rem;
-    height: 10rem;
+    min-height: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #a59cca, #695aa6);
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    background: #a59cca;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-item+.header-item {
@@ -113,45 +116,54 @@ h6 {
 
 /*  =======================================
                 Project Section
-    ======================================= */            
+    ======================================= */
 
-.project-container{
+.project-container {
     overflow-y: auto;
-    display: flex;
-}    
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
 
 .portfolio-wrapper {
-    flex-wrap: wrap;
-    gap: 30px;
     display: flex;
-    padding: 26px;
-    margin: 20px;
-    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-card {
-    border: 1px solid #dee2e6;
-    padding: 10px;
-    background: #fff;
-    height: auto;
-    width: 350px;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-card p{
-    font-size: 12px;
+.portfolio-card p {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
-.portfolio-card:hover{
-    cursor: pointer;
-    background-color: #eaeaea;
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+    transform: scale(1.03);
 }
 
 /* ===============================
        End of Project Section
-   =============================== */    
-
+   =============================== */

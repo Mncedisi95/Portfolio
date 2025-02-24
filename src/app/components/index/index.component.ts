@@ -10,7 +10,7 @@ import { ProjectsService } from '../../services/projects.service';
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './index.component.html',
   styleUrl: './index.component.css'
 })
@@ -20,20 +20,22 @@ export class IndexComponent {
   projects: IProjects[] = []
 
   /**
+   * @constructor
    * @param projectService 
    */
-  constructor(private projectService: ProjectsService){}
+  constructor(private projectService: ProjectsService) { }
 
   /**
    * @description initializes the component after angular fist display the data-bound properties
    * 
    * Fetches projects data from the Json File
    */
-  ngOnInit():void {
+  ngOnInit(): void {
     // call the helper function from project service to fetch projects data
     this.projectService.getProjects().subscribe(data => {
-        // initialize the projects property with data from projects service
+      // initialize the projects property with data from projects service
       this.projects = data
     })
   }
+ 
 }

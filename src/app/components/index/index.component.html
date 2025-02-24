@@ -1,153 +1,331 @@
-<!-- Start of Page Header -->
-<header id="home" class="header">
-    <div class="overlay"></div>
-    <div class="header_content container">
-        <h1 class="header_title">
-            <span class="up">HELLO!</span>
-            <span class="down">I am Mncedisi Masondo</span>
-        </h1>
-        <p class="header_subtitle">JUNIOR SOFTWARE DEVELOPER</p>
-        <button class="btn btn-primary">Visit My Work</button>
+<!-- Home Container -->
+<header class="home-container">
+    <!-- Home Content -->
+    <div class="home-content">
+        <!-- Background Image -->
+        <img src="assets/img/background-4.jpg" class="home-background-image" alt="Background 1" />
+        <!--Welcome Message-->
+        <h1>Welcome to My Portfolio</h1>
+        <h2>I'm <span class="highlight">Mncedisi Masondo</span>, a Software Developer</h2>
+        <p>Building modern web & mobile applications with clean, efficient code.</p>
+       <button type="submit" class="btn btn-primary">View My Work</button>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <div class="chat-header" onclick="toggleChat()">
+            💬 Chat with Me
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-messages" id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+        </div>
     </div>
 </header>
-<!--End of Page Header-->
 
-<!-- Start of About Section-->
-<section class="section pt-0" id="about">
-    <div class="container text-center">
-        <div class="about">
-            <div class="about-img-holder">
-                <img src="assets/img/Masondo.jpg" width="320" height="400">
-            </div>
-            <div class="about-caption">
-                <p class="section-subtitle">Who Am I?</p>
-                <h2 class="section-subtitle mb-3">About Me</h2>
-                <p><strong>Hi, I'm Mncedisi Masondo</strong>
-                    a recent IT graduate with a passion for software development and problem-solving.Welcome to my
-                    portfolio,where I showcase my projects,
-                    skills,and experiences.With a strong foundation in computer science and informatics and a keen
-                    interest in full-stack development, I'm excited
-                    to bring my skills and enthusiasm to the industry.Proficient in Java, C#, VB, SQL and proficient in
-                    Agile development methodologies.
-                    <br>I have obtain my Bachelor of Science degree in Information Technology in Computer Science and
-                    informatics at University of Johannesburg in April 2022. Relevant coursework includes
-                    Data Structures,Algorithms,Computer Systems,Advance Data Structures,Web Development and Database
-                    Management.Projects i have done thus far includes group project where I contributed database
-                    development and personal project,where I develop Waste Collection Management System using SQL
-                    Server, C# Web API and C# MVC.My Skills includes
-                    programming languages,which are Java,C#,HTML/CSS and Software Tools which are Git,Visual
-                    Studio,Visual Studio Code and SQL Server Management Studio and Eclipse and Technologies which are
-                    Restful and Crud APIs,Agile development.
-                    Feel free to explore my portfolio and contact me for collaborations,projects or job opportunities!
+<!-- About Section -->
+<section class="about">
+    <div class="about-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <!-- Who I Am -->
+            <div class="about-box">
+                <h3>Who am I?</h3>
+                <span class="line"></span>
+                <h5>A Software Developer Passionate About Building Scalable Solutions</h5>
+                <p>
+                    I am <strong class="highlight">Mncedisi Masondo</strong>, a skilled Web & Mobile App Developer with
+                    expertise in TypeScript, Java, C#, and SQL Server.
                 </p>
-                <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                <button type="submit" class="btn btn-primary"><i class="ti-download"></i> Download My CV</button>      
             </div>
-        </div>
-    </div>
-</section>
-<!--- End of About Section -->
 
-<!-- Start of Resume Section -->
- <section class="section">
-    <div class="container text-center">
-        <p class="section-subtitle">What I Do?</p>
-        <h2 class="section-subtitle">My Resume</h2>
-        <div class="row">
-            <div class="resume-card">
-                <div class="resume-header">
-                    <h4 class="line">Education</h4>
-                </div>
-                <div class="resume-body">
-
-                </div>
+            <!-- Personal Info -->
+            <div class="about-box">
+                <h3>Personal Info</h3>
+                <span class="line"></span>
+                <ul class="info-list">
+                    <li><strong>Name:</strong><span>Mncedisi Masondo</span></li>
+                    <li><strong>Email:</strong><span>mncedisimasondo4&#64;gmail.com</span></li>
+                    <li><strong>Phone:</strong><span>+27 83 623 7153</span></li>
+                    <li><strong>Skype:</strong><span>Mncedisi_Masondo</span></li>
+                    <li><strong>Address:</strong><span>12345 Fake ST, NoWhere, South Africa</span></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a><i class="ti ti-facebook"></i></a></li>
+                    <li><a><i class="ti ti-twitter"></i></a></li>
+                    <li><a><i class="ti ti-instagram"></i></a></li>
+                    <li><a><i class="ti ti-github"></i></a></li>
+                </ul>
             </div>
-            <div class="resume-card">
-                <div class="resume-header">
-                    <h4 class="line">Expertise</h4>
-                </div>
-                <div class="resume-body">
 
-                </div>
-            </div>
-            <div class="resume-card">
-                <div class="resume-header">
-                    <h4 class="line">Skills</h4>
-                </div>
-                <div class="resume-body">
-
-                </div>
-            </div>
-        </div>
-    </div>
- </section>
-<!--End of Resume Section-->
-
-<!-- Start Of Portfolio Section-->
-<section class="section">
-    <div class="container text-center">
-        <p class="section-subtitle">What I Did?</p>
-        <h2 class="section-subtitle">My Projects</h2>
-        <div class="project-container">
-            <div class="portfolio-wrapper">
-                <div class="portfolio-card" *ngFor="let project of projects">
-                    <h6>{{project.category}}</h6>
-                    <h6>Title:</h6>
-                    <p>{{project.title}}</p>
-                    <h6>Technologies:</h6>
-                    <p>{{project.technologies}}</p>
-                    <h6>Description:</h6>
-                    <p>{{project.description}}</p>
-                    <h6>Outcome:</h6>
-                    <p>{{project.outcome}}</p>
-                    <h6><a href={{project.githubLink}} class="link">Explore the project on GitHub</a></h6>
+            <!-- My Expertise -->
+            <div class="about-box">
+                <h3>My Expertise</h3>
+                <span class="line"></span>
+                <div class="skills">
+                    <div class="skill-item">
+                        <i class="ti-world"></i>
+                        <h6>Web & Mobile Development</h6>
+                    </div>
+                    <p>Crafting modern and responsive web and mobile applications using TypeScript, Java, and C# to
+                        deliver seamless user experiences.</p>
+                    <div class="skill-item">
+                        <i class="ti-settings"></i>
+                        <h6>Custom Software Solutions</h6>
+                    </div>
+                    <p>Providing tailored software solutions for businesses in e-commerce, education, real estate, and
+                        logistics, ensuring efficiency and scalability</p>
+                    <div class="skill-item">
+                        <i class="ti-layers"></i>
+                        <h6>Full-Stack Development</h6>
+                    </div>
+                    <p>Building complete web applications from frontend to backend, ensuring smooth integration,
+                        performance, and scalability</p>
+                    <div class="skill-item">
+                        <i class="ti-server"></i>
+                        <h6>Database Management</h6>
+                    </div>
+                    <p>Designing and managing efficient databases using SQL Server to store, retrieve, and process data
+                        effectively.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End of Portfolio Section-->
 
-<!--Start of Hire Me Section-->
-<section class="section-sm bg-primary">
-    <div class="container text-center text-sm-left">
-        <div class="row align-items-center">
-            <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                <h6 class="title text-light">Want to work with me?</h6>
-                <p class="m-0 text-light">Always feel free to Contact & Hire me</p>
+<!-- Resume section -->
+<section class="resume">
+    <div class="resume-container">
+        <h2 class="section-title">My Background</h2>
+        <div class="resume-grid">
+            <!-- Expertise Column -->
+            <div class="resume-box">
+                <h3><i class="ti-briefcase"></i> Expertise</h3>
+                <div class="resume-card">
+                    <h6 class="title"> 2022 - Present</h6>
+                    <h5><i class="ti-layers ti-icons-color"></i> Full-Stack Development</h5>
+                    <p class="subtitle">Expert in building scalable web and mobile applications using TypeScript, Java,
+                        C#, and SQL Server.</p>
+                    <hr>
+                </div>
+                <div class="resume-card">
+                    <h6 class="title">2021 - 2022</h6>
+                    <h5><i class="ti-settings ti-icons-color"></i> Custom Software Solutions</h5>
+                    <p class="subtitle">Developed tailor-made applications for businesses, including e-commerce
+                        platforms and logistics tools.</p>
+                    <hr>
+                </div>
+                <div class="resume-card">
+                    <h6 class="title">2020 - 2021</h6>
+                    <h5><i class="ti-truck ti-icons-color"></i> Logistics & Route Optimization</h5>
+                    <p class="subtitle">Specialized in optimizing delivery routes and analytics for logistics companies
+                        through custom solutions.</p>
+                </div>
             </div>
-            <div class="col-sm offset-sm-2 offset-md-3">
-                <button class="btn btn-lg _font btn-light rounded">Hire Me</button>
+
+            <!-- Education Column -->
+            <div class="resume-box">
+                <h3><i class="ti-book"></i> Education</h3>
+                <div class="resume-card">
+                    <h6 class="title">2024 - 2025</h6>
+                    <h5><i class="ti-desktop ti-icons-color"></i> Web & App Development Bootcamp</h5>
+                    <p class="subtitle">Intensive hands-on training covering full-stack development, UI/UX design, and
+                        cloud deployment.</p>
+                    <hr>
+                </div>
+                <div class="resume-card">
+                    <h6 class="title">2017 - 2021</h6>
+                    <h5><i class="ti-book ti-icons-color"></i> Bachelor's Degree in Software Development</h5>
+                    <p class="subtitle">Completed a four-year degree at the University of Johannesburg, specializing in
+                        web and mobile app development.</p>
+                    <hr>
+                </div>
+                <div class="resume-card">
+                    <h6 class="title">2009 - 2013</h6>
+                    <h5><i class="ti-medall ti-icons-color"></i> High School Certificate</h5>
+                    <p class="subtitle">Graduated with strong foundations in programming, mathematics, and logical
+                        problem-solving.</p>
+                </div>
+            </div>
+
+            <!-- Skills Column -->
+            <div class="resume-box">
+                <h3><i class="ti-bar-chart"></i> Skills</h3>
+                <div class="skill">
+                    <h4>TypeScript</h4>
+                    <div class="progress-bar"><span style="width: 90%;">90%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>Java</h4>
+                    <div class="progress-bar"><span style="width: 85%;">85%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>C#</h4>
+                    <div class="progress-bar"><span style="width: 80%;">80%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>SQL Server</h4>
+                    <div class="progress-bar"><span style="width: 75%;">75%</span></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!--End of Hire Me Section-->
 
-<!--Start Of Contact Section -->
-<section class="section">
-    <div class="container text-center">
-        <p class="section-subtitle">Get in Touch?</p>
-        <h2 class="section-subtitle mb-5">Contact Me</h2>
-        <form action="" class="col-md-10 col-lg-8 m-auto">
-            <div class="form-row">
-                <div class="form-group col-sm-12">
-                    <input type="text" size="10" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="form-group col-sm-12">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="form-group col-sm-12">
-                    <input type="text" class="form-control" placeholder="Subject" required>
-                </div>
-                <div class="form-group col-sm-12">
-                    <textarea name="comment" id="comment" cols="30" row="7" class="form-control"
-                        placeholder="Message"></textarea>
-                </div>
-                <div class="form-group col-sm-12 mt-3">
-                    <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                </div>
+<!-- service section -->
+<section class="services" id="services">
+    <div class="services-container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <i class="ti-desktop"></i>
+                <h3>Full-Stack Development</h3>
+                <p>Custom web and mobile applications using modern frameworks and best practices.</p>
             </div>
-        </form>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <i class="ti-settings"></i>
+                <h3>Custom Software Solutions</h3>
+                <p>Tailor-made software applications to streamline business operations and improve efficiency.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <i class="ti-shopping-cart"></i>
+                <h3>E-Commerce Solutions</h3>
+                <p>Building powerful online stores with secure payment gateways and advanced functionalities.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <i class="ti-map"></i>
+                <h3>Route Optimization</h3>
+                <p>AI-driven route optimization solutions for logistics, delivery, and transportation businesses.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <i class="ti-book"></i>
+                <h3>E-Learning Solutions</h3>
+                <p>Interactive Learning Management Systems (LMS) for online education and training programs.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <i class="ti-bar-chart"></i>
+                <h3>Business Analytics</h3>
+                <p>Data-driven insights and analytics tools to improve business decision-making and performance.</p>
+            </div>
+
+        </div>
     </div>
 </section>
-<!--End of Contact Page -->
+
+<!--Hire Me Section -->
+<section class="hire-me">
+    <div class="hire-container">
+        <h2>Want to Work with Me?</h2>
+        <p>Let's build something amazing together. Whether you need a custom software solution, a stunning web app, or a mobile experience, I'm here to help.</p>
+        <button class="btn btn-hire">Hire Me</button>
+    </div>
+</section>
+
+<!-- My Projects Section -->
+<section class="projects" id="projects">
+    <div class="projects-container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-fledged e-commerce system with payment integration, user authentication, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <i class="ti-html5"></i>
+                        <i class="ti-css3"></i>
+                        <i class="ti-js"></i>
+                        <i class="ti-server"></i>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>TrackOptima</h3>
+                    <p>AI-powered route optimization tool for logistics, providing real-time analytics and dynamic route planning.</p>
+                    <div class="project-tech">
+                        <i class="ti-map"></i>
+                        <i class="ti-cloud"></i>
+                        <i class="ti-bar-chart"></i>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Learning Management System</h3>
+                    <p>An interactive LMS for online courses with video hosting, quizzes, and progress tracking.</p>
+                    <div class="project-tech">
+                        <i class="ti-video-clapper"></i>
+                        <i class="ti-book"></i>
+                        <i class="ti-desktop"></i>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3><i class="ti-email"></i> Contact Information</h3>
+                <p><i class="ti-location-pin"></i> 5066 Zone 5 Zonkizizwe, Katlhong, Johannesburg, South Africa</p>
+                <p><i class="ti-email"></i> mncedisimasondo4&#64;.gmail.com</p>
+                <p><i class="ti-mobile"></i> +27 83 623 7153</p>
+                <ul class="social-icons">
+                    <li><a><i class="ti-facebook"></i></a></li>
+                    <li><a><i class="ti-twitter"></i></a></li>
+                    <li><a><i class="ti-linkedin"></i> </a></li>
+                    <li><a><i class="ti-github"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+                <h3><i class="ti-comments"></i> Send a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="ti-location-arrow"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
