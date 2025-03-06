@@ -63,4 +63,4 @@ This portfolio website is live at: [https://mncedisi95.github.io/Portfolio/]
 ## 🏆Contributors
 
 [![Mncedisi Masondo](https://avatars.githubusercontent.com/u/60698501?v=4)](https://github.com/Mncedisi95)  
-[Mncedisi Masondo](https://github.com/Mncedisi95)  
+<img src=[https://avatars.githubusercontent.com/u/60698501?v=4] width="100"height="100">
