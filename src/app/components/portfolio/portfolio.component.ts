@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IProjects } from '../../Model/IProjects';
 import { ProjectsService } from '../../services/projects.service';
 import { NgFor } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -13,14 +14,34 @@ import { NgFor } from '@angular/common';
 export class PortfolioComponent {
 
   // declare all properties
-  projects : IProjects[] = []
 
-  constructor(private projectService: ProjectsService) {}
+  data : any
+
+  constructor(private projectService: ProjectsService,private router: Router) {}
 
   ngOnInit(): void {
     // call the helper function from the service to get all projects
-    this.projectService.getProjects().subscribe(data => {
-      this.projects = data
+    this.projectService.getData().subscribe({
+      next: (data) => {
+        this.data = data // Assign fetched data to the component's variable
+      },
+      error: (error) => {
+        console.error('Error fetching data:', error) // Log error to console
+      }
     })
+  }
+
+  /**
+  * @method goToProjectDetails
+  * @param {any} projectId 
+  */
+  goToProjectDetails(projectId: any):void {
+
+    const id = projectId
+
+    sessionStorage.setItem('id', id)
+
+    this.router.navigate(['/project-details'], {state: {id}})
+
   }
 }

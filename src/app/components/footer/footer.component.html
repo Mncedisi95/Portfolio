@@ -10,19 +10,20 @@
         <div class="footer-nav">
             <h4>Quick Links</h4>
             <ul>
-                <li><a>About</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Contact</a></li>
+                <li><a routerLink="/index">Home</a></li>
+                <li><a routerLink="/about">About</a></li>
+                <li><a routerLink="/services">Services</a></li>
+                <li><a routerLink="/projects">Projects</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
             </ul>
         </div>
 
         <!-- Contact Details -->
         <div class="footer-contact">
             <h4>Contact Me</h4>
-            <p><i class="ti-mobile"></i> +27 83 623 7153</p>
-            <p><i class="ti-email"></i> mncedisimasondo4&#64;gmail.com</p>
-            <p><i class="ti-location-pin"></i> Johannesburg, South Africa</p>
+            <p><i class="ti-mobile"></i>{{data.personal.phone}}</p>
+            <p><i class="ti-email"></i>{{data.personal.email}}</p>
+            <p><i class="ti-location-pin"></i>{{data.personal.location}}</p>
         </div>
 
         <!-- Social Media -->

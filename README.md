@@ -1,24 +1,36 @@
-# Portfolio
+# 📖 Table of Content
 
-Welcome to my profolio website,showcasing  my skills and experiences in web developement and design.  
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Stack](#️tech-stack)
+4. [Installation](#installation)
+5. [Screenshots](#screenshots)
+6. [Live Demo](#live-demo)
+7. [Contact](#contact)
+8. [Contributors](#contributors)
 
-## Features
+## 📌Overview
 
-1. Project Showcase - A curated selection of my best projects, with descriptions, images and links to my repository.
-2. Skills - A list of my technical skills including programming.
-3. Experience - A list of my work experience, with descriptions and achievements.
-4. Contact - A contact form and links to my social media profiles. 
+Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as a software developer.
 
+## 🚀Features
 
-## Technologies Used and Software Tools
+- **About Me** – A brief introduction about myself.
+- **Projects** – Showcases my work with descriptions and live demos.
+- **Skills** – Highlights the technologies and tools I specialize in.
+- **Contact** – Provides ways to reach out to me.
+- **Responsive Design** – Works on all devices (desktop, tablet, and mobile).
 
-1. Front-End - HTML5 and CSS.
-2. Deployement - GitHub Pages. 
-3. Software tools - Visual Studio Code and GitHub.
+## 🛠️Tech Stack
 
-## Getting Started
+- **Frontend**: HTML, CSS, Typescript, Angular.
+- **Database**: JSON File.
+- **Deployement** - GitHub Pages.
+- **Software tools** - Visual Studio Code and GitHub.
 
-1. Clone the repository: git clone https://github.com/Mncedisi95/Portfolio.git
+## 📦Installation
+
+1. Clone the repository: git clone [https://github.com/Mncedisi95/Portfolio.git]
 2. Install dependencies: npm install.
 3. Start the development server: npm start.
 4. Build and Deploy: npm run build and npm run deploy.
@@ -28,15 +40,27 @@ Welcome to my profolio website,showcasing  my skills and experiences in web deve
 8. Run linter checks for code quality: npm run link.
 9. Generate documentation for the project: npm run docs.
 
-## Deployement Link
+## 📸Screenshots
 
-This portfolio website is deployed at https://mncedisi95.github.io/Portfolio/
+![Home Screen](src/assets/screenshots/index.png)
+![About Me Screen](src/assets/screenshots/about-me.png)
+![About Me Section Screen](src/assets/screenshots/about-section.png)
+![Resume Section](src/assets/screenshots/resume.png)
+![Projects Screen](src/assets/screenshots/projects.png)
+![Project Details Screen](src/assets/screenshots/project-details.png)
+![Contact Screen](src/assets/screenshots/contact.png)
 
-## Author
+## 🌍Live Demo
 
-* Name: Mncedisi Masondo
-* Email: mncedisimasondo4@gmail.com
-* Linkedin Profile: https://www.linkedin.com/in/mncedisi-masondo-9791b2189/ 
+This portfolio website is live at: [https://mncedisi95.github.io/Portfolio/]
 
+## 📬Contact
 
+- **Portfolio**: [https://mncedisi95.github.io/Portfolio/]
+- **Email**: [mncedisimasondo4@gmail.com]
+- **GitHub**: [Mncedisi95](https://github.com/Mncedisi95)
 
+## 🏆Contributors
+
+[![Mncedisi Masondo](https://avatars.githubusercontent.com/u/60698501?v=4)](https://github.com/Mncedisi95)  
+[Mncedisi Masondo](https://github.com/Mncedisi95)  

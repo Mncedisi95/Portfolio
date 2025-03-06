@@ -1,30 +1,40 @@
-<!-- Start of Page Header -->
-<header class="header-mini">
-    <div class="header-content">
-        <a class="header-item">Home</a>
-        <a class="header-item">Projects</a>
-    </div>
+<!-- Page Header -->
+<header class="page-header">
+    <h1>My Projects</h1>
 </header>
-<!--End of Page Header-->
 
-<!-- Start Of Portfolio Section-->
-<section class="section">
-    <div class="container text-center">
-        <p class="section-subtitle">What I Did?</p>
-        <h2 class="section-subtitle">My Projects</h2>
-        <div class="project-container">
-            <div class="portfolio-wrapper">
-                <div class="portfolio-card" *ngFor="let project of projects">
-                    <h6>{{project.category}}</h6>
-                    <h6>Title:</h6>
-                    <p>{{project.title}}</p>
-                    <h6>Technologies:</h6>
-                    <p>{{project.technologies}}</p>
-                    <h6>Description:</h6>
+<!-- My Projects Section -->
+<section class="projects animated-section" id="projects">
+    <div class="projects-container">
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="backend">Backend Systems</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project Card -->
+            <div class="project-card" *ngFor="let project of data.projects" [attr.data-category]="project.category">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>{{project.title}}</h3>
+                        <button class="project-action-btn"><i class="ti-more" (click)="goToProjectDetails(project.id)"></i></button>
+                    </div>
                     <p>{{project.description}}</p>
-                    <h6>Outcome:</h6>
-                    <p>{{project.outcome}}</p>
-                    <h6><a href={{project.githubLink}} class="link">Explore the project on GitHub</a></h6>
+                    <div class="project-tech">
+                        <i class="ti-html5"></i>
+                        <i class="ti-css3"></i>
+                        <i class="ti-js"></i>
+                        <i class="ti-server"></i>
+                        <i class="ti-database"></i>
+                        <i class="ti-mobile"></i>
+                    </div>
+                    <div class="project-links">
+                        <a href="{{project.github}}" class="btn">View Code <i class="ti-github"></i></a>
+                        <a href="{{project.demo}}" class="btn demo-btn">Live Demo <i class="ti-link"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

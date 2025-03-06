@@ -14,11 +14,5 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 })
 export class AppComponent {
 
-  ngOnChanges(changes :SimpleChange){
-    console.log(changes)
-  }
-
-  ngOnInit(){
-    console.log("Initialized")
-  }
+  
 }

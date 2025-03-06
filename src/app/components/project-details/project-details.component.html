@@ -1,0 +1,70 @@
+<!-- Page Header -->
+<header class="page-header">
+    <h1><i class="ti ti-project"></i> Project Details</h1>
+</header>
+
+<!-- Project Section -->
+<section class="project">
+    <div class="project-container">
+        <!-- Project Overview -->
+        <div class="project-overview">
+            <div class="project-text">
+                <h2>{{ projectDetails?.title }}</h2>
+                <p>{{ projectDetails?.description }}</p>
+            </div>
+
+            <!-- Improved Tech Stack Section -->
+            <div class="project-tech">
+                <h2>Tech Stack</h2>
+                <div class="tech-list">
+                    <div class="tech-category" *ngFor="let tech of projectDetails.technologies | keyvalue">
+                        <h3> {{ tech.key }}</h3>
+                        <p>{{ tech.value }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-item" *ngFor="let feature of projectDetails.features">
+                <h3><i class="ti ti-bookmark"></i> {{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+        </div>
+
+        <!-- Challenges -->
+        <!-- Challenges Section -->
+        <div class="challenges-container">
+            <h2> Challenges Faced & Solutions</h2>
+
+            <div class="challenge-item">
+                <h3>Problem</h3>
+                <p>{{ projectDetails?.challenge }}</p>
+            </div>
+
+            <div class="challenge-item">
+                <h3>Solution</h3>
+                <p>{{ projectDetails?.solution }}</p>
+            </div>
+
+            <div class="challenge-item">
+                <h3> Outcome</h3>
+                <p>{{ projectDetails?.outcome }}</p>
+            </div>
+        </div>
+
+
+        <!-- Links -->
+        <h2> Screenshots / Demo Links</h2>
+        <div class="project-links">
+            <a href="{{ projectDetails?.githubLink }}" class="button">
+                <i class="ti ti-github"></i> View on GitHub
+            </a>
+            <a href="{{ projectDetails?.demo }}" class="button">
+                <i class="ti ti-world"></i> Live Demo
+            </a>
+        </div>
+    </div>
+</section>

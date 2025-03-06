@@ -1,29 +1,271 @@
-[
-    {
-        "id": 1,
-        "category": "Project 1 - Group Project",
-        "title": "Web Development Project - Job Post/Application System",
-        "technologies": "Technologies used are HTML, CSS, Java ,C# with SQL Server Database",
-        "description": "Designed and developed a fully functional Job Application Management System using HTML, CSS, C# and SQL.Features are Authentication and Authorization, Email Notifications, Mobile Optimization, Reporting And Analytics, Company Information, Resume and Cover Letter Upload, Tracking Status,Profile Creation, Application Filtering and Sorting, Job Expiration date, Requirements and Qualifications, Location and Remote Work options, Job Categories and Job Description.",
-        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows,Easy Job search, Effective job posting, data driven decision making.",
-        "githubLink": "https://github.com/IFMTYP-2020/team36"
+{
+    "personal": {
+        "name": "Mncedisi Masondo",
+        "email": "mncedisimasondo4@gmail.com",
+        "phone": "+27 83 623 7153",
+        "location": "5066 Zone 5 Zonkizizwe, Katlhong, Johannesburg",
+        "summaryHeader": "A Software Developer Passionate About Building Scalable Solutions",
+        "summary": "A highly skilled Web & Mobile App Developer with expertise in TypeScript, Java, C#, and SQL Server, specializing in building scalable, efficient, and user-friendly digital solutions."
     },
-    {
-        "id": 2,
-        "category": "Project 2 - Personal Project",
-        "title": "Web Development Project- eWaste Collection Management System",
-        "technologies": "Technologies used are HTML, CSS,C# with SQL Server Database.",
-        "description": "Designed and developed a fully functional eWaste Collection Management System using HTML, CSS, C# and SQL server Database. Features are Authentication and Authorization, Reporting And Analytics, eWaste Collection request, Scheduling and Routing, Customer Profile and Notifcations, Intergration with recycling facilities, Weight and Volume Tracking, Vehicle and driver Management.",
-        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows",
-        "githubLink": "https://github.com/Mncedisi95/Train-Management-System"
-    },
-    {
-        "id": 3,
-        "category": "Project - Group Project",
-        "title": "Web Development Project - Ecommerce Website",
-        "technologies": "Technologies used are HTML, CSS,C# with SQL Server Database.",
-        "description": "Designed and developed a fully functional Ecommerce Website using HTML, CSS, C# and SQL Server Database.Features are Authentication and Authorization, Reporting And Analytics, Product catalog with Filtering and Sorting,Shopping cart,checkout process Profile creation.",
-        "outcome": "Outcome of the system is scalability and flexibility, Automated Workflows",
-        "githubLink": ""
-    }
-]
+    "expertise": [
+        {
+            "id": 1,
+            "category": "Web & Mobile Development",
+            "icon": "ti-world",
+            "description": "Crafting modern and responsive web and mobile applications using TypeScript, Java, and C# to deliver seamless user experiences."
+        },
+        {
+            "id": 2,
+            "category": "Custom Software Solutions",
+            "icon": "ti-settings",
+            "description": "Providing tailored software solutions for businesses in e-commerce, education, real estate, and logistics, ensuring efficiency and scalability"
+        },
+        {
+            "id": 3,
+            "category": "Full-Stack Development",
+            "icon": "ti-layers",
+            "description": "Building complete web applications from frontend to backend, ensuring smooth integration, performance, and scalability"
+        },
+        {
+            "id": 4,
+            "category": "Database Management",
+            "icon": "ti-server",
+            "description": "Designing and managing efficient databases using SQL Server to store, retrieve, and process data effectively."
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "year": "2024 - 2025",
+            "icon": "ti-desktop ti-icons-color",
+            "academicBackground": "Online Codetribe Program (Web and App Development)",
+            "description": "Completed a 6-month intensive hands-on training program from August 15, 2024, to February 15, 2025, covering full-stack development, UI/UX design, and cloud deployment."
+        },
+        {
+            "id": 2,
+            "year": "2017 - 2021",
+            "icon": "ti-book ti-icons-color",
+            "academicBackground": "Bachelor's Degree in IT in Computer Science & Informatics",
+            "description": "Earned a four-year degree from the University of Johannesburg, gaining in-depth knowledge and hands-on experience in software development."
+        },
+        {
+            "id": 3,
+            "year": "2009 - 2013",
+            "icon": "ti-medall ti-icons-color",
+            "academicBackground": "High School Certificate",
+            "description": "Graduated with a solid foundation in Physical Science, Mathematics, and Life Sciences, demonstrating strong analytical and problem-solving skill"
+        }
+    ],
+    "skills": [
+        {
+            "skill": "TypeScript",
+            "proficiency": "Beginner",
+            "note": "Comfortable with OOP, type safety, and modern frameworks like Ionic, Angular"
+        },
+        {
+            "skill": "HTML",
+            "proficiency": "Intermediate",
+            "note": "Strong in semantic HTML, accessibility, and structuring complex UIs."
+        },
+        {
+            "skill": "CSS",
+            "proficiency": "Intermediate",
+            "note": "Proficient in animations, Flexbox, Grid, and responsive design."
+        },
+        {
+            "skill": "Javascript",
+            "proficiency": "Beginner",
+            "note": "Basic understanding of DOM manipulation, and event handling."
+        }
+    ],
+    "services": [
+        {
+            "type": "Full-Stack Development",
+            "icon": "ti-desktop",
+            "description": "Custom web and mobile applications using modern frameworks and best practices."
+        },
+        {
+            "type": "Custom Software Solutions",
+            "icon": "ti-settings",
+            "description": "Tailor-made software applications to streamline business operations and improve efficiency."
+        },
+        {
+            "type": "E-Commerce Solutions",
+            "icon": "ti-shopping-cart",
+            "description": "Building powerful online stores with secure payment gateways and advanced functionalities."
+        },
+        {
+            "type": "E-Learning Solutions",
+            "icon": "ti-book",
+            "description": "Interactive Learning Management Systems (LMS) for online education and training programs."
+        },
+        {
+            "type": "Business Analytics",
+            "icon": "ti-bar-chart",
+            "description": "Data-driven insights and analytics tools to improve business decision-making and performance"
+        },
+        {
+            "type": "Route Optimization",
+            "icon": "ti-map",
+            "description": "AI-driven route optimization solutions for logistics, delivery, and transportation businesses."
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "category": "Project 1 - Individual Project",
+            "title": "SuiteSync",
+            "technologies": {
+                "Front-End": "Angular & Typescript",
+                "Styling": "CSS, Themify Icons & Material UI",
+                "Back-End":  "Typescript & Firebase firestore (Cloud NoSQL Database)",
+                "Authentication": "Firebase Authentication",
+                "Deployment": "Firebase",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "SuiteSync is a comprehensive hotel management system designed to streamline daily operations, enhance guest experiences, and optimize administrative processes. It offers real-time booking management, seamless payment processing, and in-depth analytics. With an intuitive interface and automation capabilities, SuiteSync simplifies reservations, billing, and staff coordination, ensuring efficiency and improved customer satisfaction.",
+            "outcome": "SuiteSync delivers scalability and flexibility, enabling hotels of all sizes to adapt to dynamic demands. The system automates workflows to reduce manual effort, enhances job search and recruitment within the hospitality sector, and optimizes job postings for better visibility. Additionally, its data-driven insights empower hotels to make informed business decisions, ultimately improving operational efficiency and revenue growth.",
+            "challenge": "Ensuring smooth performance and real-time updates while minimizing Firebase read/write costs.",
+            "solution": "Implemented batched writes and Firestore caching to reduce API calls and improve efficiency. Also used onSnapshot listeners to update tasks instantly without unnecessary re-fetching.",
+            "githubLink": "https://github.com/Mncedisi95/firebase",
+            "demo": "https://fir-6122b.web.app",
+            "features": [
+                {
+                    "title": "Real-time Room Booking",
+                    "icon": "ti ti-bookmark",
+                    "description": "Customers can book rooms instantly with live availability updates."
+                },
+                {
+                    "title": "Automated Invoicing",
+                    "icon": "ti ti-credit-card",
+                    "description": "Invoices are generated automatically for each booking."
+                },
+                {
+                    "title": "Analytics Dashboard",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Get insights into hotel performance with real-time reports."
+                },
+                {
+                    "title": "Role-based Access",
+                    "icon": "ti ti-lock",
+                    "description": "Staff members have different access levels for security."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "category": "Project 1 - Individual Project",
+            "title": "Fakestore",
+            "technologies": {
+                "Fontend": "Angular, Typescript",
+                "Styling": "CSS & Material UI",
+                "API Integration": "FakeStore API (RESTful API for product management",
+                "Authentication": "FakeStore API",
+                "Deployment": "Github Pages",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "An Admin Dashboard for managing products in an e-commerce platform powered by the FakeStore API. The dashboard provides administrators with a user-friendly interface to view, add, update, and delete products from the store. It simplifies product management by offering real-time updates and, ensuring smooth backend operations for the e-commerce system.",
+            "outcome": "The system empowers administrators with scalability and flexibility, allowing seamless management of product catalogs, pricing.Through automated workflows, tasks such as inventory updates, reducing manual workload and operational delays. The centralized dashboard provides real-time insights into sales performance, stock levels, and customer trends, enabling data-driven decision-making to optimize business strategies. Additionally, secure user authentication and role-based access ensure controlled permissions for admins, staff, and vendors, enhancing system security and operational efficiency.",
+            "challenge": "Handling API request delays and maintaining UI responsiveness.",
+            "solution": "Implemented loading states and optimistic updates to ensure a smooth user experience, reducing perceived latency.",
+            "githubLink": "https://github.com/Mncedisi95/fakestore",
+            "demo": "https://mncedisi95.github.io/fakestore/",
+            "features": [
+                {
+                    "title": "Product Management ",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, update, and delete products via FakeStore API."
+                },
+                {
+                    "title": "Category Filtering",
+                    "icon": "ti ti-credit-card",
+                    "description": "Sort and filter products by category"
+                },
+                {
+                    "title": "User Authentication",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Secure login/logout functionality for admins."
+                },
+                {
+                    "title": "Real-time Updates ",
+                    "icon": "ti ti-lock",
+                    "description": "API-integrated changes reflect instantly on the frontend."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "category": "Project 3 - Individual Project",
+            "title": "Todo List (Web App)",
+            "technologies": {
+                "Fontend": "Angular, Typescript",
+                "Styling": "CSS",
+                "Backend": "JSON Server (Mock REST API)",
+                "Data Storage": "JSON File (acts as a database",
+                "Deployment": "GitHub pages (Frontend), Local JSON Server",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "Todo List Web App that stores and manages tasks using a JSON file as a database powered by JSON Server. It allows users to add, update, delete, and mark tasks as completed while persisting data in a simulated backend. The app is lightweight, fast, and ideal for learning API integration and local storage solutions.",
+            "outcome": "The To-Do List Web App enhances productivity by providing an intuitive and efficient task management system. Users can easily create, update, and track tasks, ensuring better organization and time management.",
+            "challenge": "Handling data persistence and avoiding loss of tasks on page refresh.",
+            "solution": "Used JSON Server as a local backend to store data persistently, ensuring tasks remain available even after a browser refresh.",
+            "githubLink": "https://github.com/Mncedisi95/assessment-two",
+            "demo": "https://mncedisi95.github.io/assessment-two/",
+            "features": [
+                {
+                    "title": "Task Management ",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, edit, delete, and mark tasks as completed."
+                },
+                {
+                    "title": "Persistent Data Storage",
+                    "icon": "ti ti-credit-card",
+                    "description": "Tasks are saved in a JSON file and retrieved via JSON Server"
+                },
+                {
+                    "title": "RESTful API Integration",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Fetch, create, update, and delete tasks using API calls."
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "category": "Project 3 - Individual Project",
+            "title": "Todo List (Mobile App)",
+            "technologies": {
+                "Fontend": "Angular, Ionic, Javascript & Typescript",
+                "Styling": "CSS & Ionic UI",
+                "Backend": "Firebase Firestore (Cloud NoSQL Database)",
+                "Authentication": "Firebase Authentication",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": " a cross-platform Todo List Mobile App that enables users to add, update, delete, and organize tasks in real-time using Firebase Firestore as the backend. The app provides seamless synchronization across multiple devices, allowing users to manage their tasks efficiently from anywhere. It is designed with a clean UI and smooth animations for better user experience.",
+            "outcome": "The To-Do List Mobile App boosts productivity by offering a seamless and accessible task management experience on the go. With a user-friendly interface, users can effortlessly create, update, and track their tasks anytime, anywhere. The app enhances time management with smart reminders, priority tagging, and calendar integration, making daily planning more efficient and stress-free.",
+            "challenge": "Ensuring smooth performance and real-time updates while minimizing Firebase read/write costs.",
+            "solution": "Implemented batched writes and Firestore caching to reduce API calls and improve efficiency. Also used onSnapshot listeners to update tasks instantly without unnecessary re-fetching.",
+            "githubLink": "https://github.com/Mncedisi95/todo-list",
+            "demo": "",
+            "features": [
+                {
+                    "title": "Real-time Task Management",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, edit, delete, and mark tasks as completed with instant cloud updates."
+                },
+                {
+                    "title": "User Authentication",
+                    "icon": "ti ti-credit-card",
+                    "description": "Secure login/signup using Firebase Authentication"
+                }
+            ]
+        }
+    ],
+    "jobs": [
+        {
+            "duration": "2024 Aug - 2025 Feb",
+            "title": "Software Development",
+            "icon" : "ti-layers ti-icons-color",
+            "description": "During my internship at mLab (CodeTribe), I gained hands-on experience in software development using Firestore, Angular, Ionic Framework, and TypeScript. I developed individual projects, focusing on building and optimizing web and mobile applications, enhancing my skills in frontend and backend development within a real-world environment."
+        }
+    ]
+}

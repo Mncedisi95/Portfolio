@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, map, Observable, of } from 'rxjs';
 import { IProjects } from '../Model/IProjects';
 
 /**
@@ -25,8 +25,33 @@ export class ProjectsService {
    * 
    * @returns list of projects
    */
-  getProjects(): Observable<IProjects[]> {
+  getData(): Observable<any> {
     // send a get request
-    return this.httpClient.get<IProjects[]>(this.dataUrl)
+    return this.httpClient.get<any>(this.dataUrl)
+  }
+
+  /**
+   * @method getProjectByID
+   * @param projectId 
+   * @description
+   * @returns 
+   */
+  getProjectByID(projectId: number): Observable<any> {
+  
+    return this.httpClient.get<any>(this.dataUrl).pipe(
+      map(data => {
+        if (!data || !data.projects) {
+          console.error('Projects data not found');
+          return null;
+        }
+        
+        return data.projects.find((project: any) => project.id === projectId) || null 
+ 
+      }),
+      catchError(error => {
+        console.error('Error fetching project:', error);
+        return of(null);
+      })
+    );
   }
 }

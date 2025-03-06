@@ -21,7 +21,6 @@
     }
 }
 
-
 .footer {
     background: linear-gradient(135deg, #012A4A, #025E73); /* Modern gradient */
     color: #fff;
@@ -51,7 +50,7 @@
 
 .footer-about h3 {
     font-size: 1.8rem;
-    font-family: "Baloo Paaji", cursive;
+    font-family: "Poppins", sans-serif;
     color: #00a3a3;
 }
 
@@ -67,7 +66,7 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     color:  #00a3a3;
-    font-family: "Baloo Paaji", cursive;
+    font-family: "Poppins", sans-serif;
 }
 
 .footer-nav ul {

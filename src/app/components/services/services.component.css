@@ -1,0 +1,82 @@
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.page-header {
+    text-align: center;
+    color: #008080;
+    padding: 100px 20px; 
+    margin-bottom: -45px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 0.7s ease-in-out forwards;
+}
+
+.page-header h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.services {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-container {
+    width: 85%;
+    margin: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #008080;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.service-card:hover i {
+    color: #00a3a3;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #6c757d;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
