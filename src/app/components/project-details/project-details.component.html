@@ -17,7 +17,7 @@
             <div class="project-tech">
                 <h2>Tech Stack</h2>
                 <div class="tech-list">
-                    <div class="tech-category" *ngFor="let tech of projectDetails.technologies | keyvalue">
+                    <div class="tech-category" *ngFor="let tech of projectDetails?.technologies | keyvalue">
                         <h3> {{ tech.key }}</h3>
                         <p>{{ tech.value }}</p>
                     </div>
@@ -28,7 +28,7 @@
         <!-- Key Features -->
         <h2>Key Features</h2>
         <div class="features-grid">
-            <div class="feature-item" *ngFor="let feature of projectDetails.features">
+            <div class="feature-item" *ngFor="let feature of projectDetails?.features">
                 <h3><i class="ti ti-bookmark"></i> {{ feature.title }}</h3>
                 <p>{{ feature.description }}</p>
             </div>

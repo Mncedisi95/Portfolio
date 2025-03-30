@@ -5,7 +5,11 @@
         "phone": "+27 83 623 7153",
         "location": "5066 Zone 5 Zonkizizwe, Katlhong, Johannesburg",
         "summaryHeader": "A Software Developer Passionate About Building Scalable Solutions",
-        "summary": "A highly skilled Web & Mobile App Developer with expertise in TypeScript, Java, C#, and SQL Server, specializing in building scalable, efficient, and user-friendly digital solutions."
+        "summary": "Hey, I'm Mncedisi, a passionate software developer with a strong foundation in computer science and informatics. I thrive on problem-solving and building impactful software solutions. This portfolio showcases my projects, skills, and experiences in full-stack development. With a keen interest in innovation and technology, I'm eager to contribute to the ever-evolving tech industry.",
+        "profile": "assets/img/Masondo.jpg",
+        "educational": "I earned my Bachelor of Science degree in Information Technology (Computer Science and Informatics) from the University of Johannesburg in April 2022. My coursework included Data Structures, Algorithms, Computer Systems, Advanced Data Structures, Web Development, and Database Management",
+        "experience":"I joined CodeTribe Academy for an intensive six-month full-stack development program, from August 15, 2024, to February 15, 2025. During this time, I worked on real-world projects, honed my UI/UX design skills, and explored cloud deployment strategies.",
+        "goals": "My goal is to leverage my technical skills and problem-solving abilities to create impactful software solutions. I am eager to collaborate on innovative projects, contribute to the tech community, and continuously grow as a software developer."
     },
     "expertise": [
         {
@@ -36,23 +40,23 @@
     "education": [
         {
             "id": 1,
-            "year": "2024 - 2025",
+            "year": "Aug 2024 - Feb 2025",
             "icon": "ti-desktop ti-icons-color",
             "academicBackground": "Online Codetribe Program (Web and App Development)",
             "description": "Completed a 6-month intensive hands-on training program from August 15, 2024, to February 15, 2025, covering full-stack development, UI/UX design, and cloud deployment."
         },
         {
             "id": 2,
-            "year": "2017 - 2021",
+            "year": "Feb 2017 - Dec 2021",
             "icon": "ti-book ti-icons-color",
             "academicBackground": "Bachelor's Degree in IT in Computer Science & Informatics",
             "description": "Earned a four-year degree from the University of Johannesburg, gaining in-depth knowledge and hands-on experience in software development."
         },
         {
             "id": 3,
-            "year": "2009 - 2013",
+            "year": "Jan 2009 - Dec 2013",
             "icon": "ti-medall ti-icons-color",
-            "academicBackground": "High School Certificate",
+            "academicBackground": "National Senior Certificate",
             "description": "Graduated with a solid foundation in Physical Science, Mathematics, and Life Sciences, demonstrating strong analytical and problem-solving skill"
         }
     ],
@@ -80,34 +84,44 @@
     ],
     "services": [
         {
-            "type": "Full-Stack Development",
-            "icon": "ti-desktop",
-            "description": "Custom web and mobile applications using modern frameworks and best practices."
+            "type": "Web Development",
+            "icon": "ti-world",
+            "description": "Building dynamic, responsive, and high-performance websites tailored to business needs.",
+            "categories": [
+                "Full-Stack Web Applications",
+                "Front Development(HTML,CSS,Typescipt,Angular)",
+                "API Development & Integration"
+            ]
         },
         {
-            "type": "Custom Software Solutions",
-            "icon": "ti-settings",
-            "description": "Tailor-made software applications to streamline business operations and improve efficiency."
+            "type": "Mobile App Development",
+            "icon": "ti-mobile",
+            "description": "Developing user-friendly, feature-rich mobile applications for businesses and startups.",
+            "categories": [
+                "Native Apps (Android, iOS)",
+                "Cross-Platform Apps (Ionic)",
+                "Hybrid Mobile Apps"
+            ]
+        },
+        {
+            "type": "Database & Cloud Services",
+            "icon": "ti-server",
+            "description": "Scalable, secure, and optimized database and cloud solutions to support business operations and data management.",
+            "categories": [
+                "Cloud Database Management (Firestore)",
+                "SQL & NoSQL Databases (SQL Server)",
+                "Cloud Integration (Firebase)"
+            ] 
         },
         {
             "type": "E-Commerce Solutions",
             "icon": "ti-shopping-cart",
-            "description": "Building powerful online stores with secure payment gateways and advanced functionalities."
-        },
-        {
-            "type": "E-Learning Solutions",
-            "icon": "ti-book",
-            "description": "Interactive Learning Management Systems (LMS) for online education and training programs."
-        },
-        {
-            "type": "Business Analytics",
-            "icon": "ti-bar-chart",
-            "description": "Data-driven insights and analytics tools to improve business decision-making and performance"
-        },
-        {
-            "type": "Route Optimization",
-            "icon": "ti-map",
-            "description": "AI-driven route optimization solutions for logistics, delivery, and transportation businesses."
+            "description": "Building powerful online stores with secure payment gateways and advanced functionalities.",
+            "categories": [
+                "Custom E-Commerce Platforms",
+                "Shopify & WooCommerce Development",
+                "Payment Gateway Integration"
+            ]
         }
     ],
     "projects": [
@@ -265,7 +279,7 @@
             "duration": "2024 Aug - 2025 Feb",
             "title": "Software Development",
             "icon" : "ti-layers ti-icons-color",
-            "description": "During my internship at mLab (CodeTribe), I gained hands-on experience in software development using Firestore, Angular, Ionic Framework, and TypeScript. I developed individual projects, focusing on building and optimizing web and mobile applications, enhancing my skills in frontend and backend development within a real-world environment."
+            "description": "During my Learnership at mLab (CodeTribe), I gained hands-on experience in software development using Firestore, Angular, Ionic Framework, and TypeScript. I developed individual projects, focusing on building and optimizing web and mobile applications, enhancing my skills in frontend and backend development within a real-world environment."
         }
     ]
 }

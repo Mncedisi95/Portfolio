@@ -141,6 +141,7 @@
     color: #fff;
     border: none;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .ti-arrow-right{
@@ -438,7 +439,8 @@
     margin-bottom: 10px;
 }
 
-.resume-card .title {
+.resume-card .title,
+.resume-card h5 {
     font-size: 1rem;
     font-weight: bold;
     color: #008080;
@@ -452,8 +454,8 @@
 }
 
 .resume-card .subtitle {
-    font-size: 0.75rem;
-    color: #6c757d;
+    font-size: 0.85rem;
+    color: #333;
     font-family: "Source Sans Pro", sans-serif;
     animation: fadeIn 1s ease-in-out forwards;
     animation-delay: 0.7s;
@@ -568,6 +570,28 @@
     font-size: 1rem;
     color: #6c757d;
     font-family: "Source Sans Pro", sans-serif;
+}
+
+
+.service-category {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #008080;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-card:hover .service-category {
+    opacity: 1
+}
+
+.service-card:hover .service-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Hire Me ection */

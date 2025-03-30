@@ -8,10 +8,15 @@
     <div class="services-container">
         <div class="services-grid">
             <!-- Services  -->
-            <div class="service-card" *ngFor="let list of data.services">
-                <i class={{list.icon}}></i>
-                <h3>{{list.type}}</h3>
-                <p>{{list.description}}</p>
+            <div class="service-card" *ngFor="let list of data?.services">
+                <div class="service-content">
+                    <i class="{{list.icon}}"></i>
+                    <h3>{{list.type}}</h3>
+                    <p>{{list.description}}</p>
+                </div>
+                <div class="service-category">
+                    {{list.categories}}
+                </div>
             </div>
         </div>
     </div>

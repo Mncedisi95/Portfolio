@@ -13,7 +13,7 @@
     
         <!-- Buttons -->
         <div class="btn-group">
-            <button type="submit" class="btngroup-primary">VIEW PORTFOLIO<i class="ti-arrow-right"></i></button>
+            <button type="submit" [routerLink]="['/projects']" class="btngroup-primary">VIEW PORTFOLIO<i class="ti-arrow-right"></i></button>
             <button type="submit" class="btngroup-secondary">HIRE ME<i class="ti-arrow-right"></i></button>
         </div>
     </div>
@@ -39,8 +39,8 @@
             <div class="about-box">
                 <h3>Who am I?</h3>
                 <span class="line"></span>
-                <h5>{{data.personal?.summaryHeader}}</h5>
-                <p>{{data.personal?.summary}}</p>
+                <h5>{{data?.personal.summaryHeader}}</h5>
+                <p>{{data?.personal.summary}}</p>
                 <button type="submit" class="btn btn-primary"><i class="ti-download"></i> Download My CV</button>      
             </div>
 
@@ -49,10 +49,10 @@
                 <h3>Personal Info</h3>
                 <span class="line"></span>
                 <ul class="info-list">
-                    <li><strong>Name:</strong><span>{{data.personal?.name}}</span></li>
-                    <li><strong>Email:</strong><span>{{data.personal?.email}}</span></li>
-                    <li><strong>Phone:</strong><span>{{data.personal?.phone}}</span></li>
-                    <li><strong>Address:</strong><span>{{data.personal?.location}}</span></li>
+                    <li><strong>Name:</strong><span>{{data?.personal.name}}</span></li>
+                    <li><strong>Email:</strong><span>{{data?.personal.email}}</span></li>
+                    <li><strong>Phone:</strong><span>{{data?.personal.phone}}</span></li>
+                    <li><strong>Address:</strong><span>{{data?.personal.location}}</span></li>
                 </ul>
                 <ul class="social-icons">
                     <li><a><i class="ti ti-facebook"></i></a></li>
@@ -66,12 +66,12 @@
             <div class="about-box">
                 <h3>My Expertise</h3>
                 <span class="line"></span>
-                <div class="skills" *ngFor="let skill of data.expertise">
+                <div class="skills" *ngFor="let skill of data?.expertise">
                     <div class="skill-item">
-                        <i class={{skill?.icon}}></i>
-                        <h6>{{skill?.category}}</h6>
+                        <i class={{skill.icon}}></i>
+                        <h6>{{skill.category}}</h6>
                     </div>
-                    <p>{{skill?.description}}</p>
+                    <p>{{skill.description}}</p>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
             <!-- Expertise Column -->
             <div class="resume-box">
                 <h3><i class="ti-briefcase"></i> Expertise</h3>
-                <div class="resume-card" *ngFor="let list of data.jobs">
+                <div class="resume-card" *ngFor="let list of data?.jobs">
                     <h6 class="title">{{list.duration}}</h6>
                     <h5><i class={{list.icon}}></i> {{list.title}}</h5>
                     <p class="subtitle">{{list.description}}</p>
@@ -97,10 +97,10 @@
             <!-- Education Column -->
             <div class="resume-box">
                 <h3><i class="ti-book"></i> Education</h3>
-                <div class="resume-card" *ngFor="let list of data.education">
-                    <h6 class="title">{{list?.year}}</h6>
-                    <h5><i class={{list?.icon}}></i> {{list?.academicBackground}}</h5>
-                    <p class="subtitle">{{list?.description}}</p>
+                <div class="resume-card" *ngFor="let list of data?.education">
+                    <h6 class="title">{{list.year}}</h6>
+                    <h5><i class={{list.icon}}></i> {{list.academicBackground}}</h5>
+                    <p class="subtitle">{{list.description}}</p>
                     <hr>
                 </div>
             </div>
@@ -117,10 +117,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let list of data.skills">
-                            <td>{{list?.skill}}</td>
-                            <td>{{list?.proficiency}}</td>
-                            <td>{{list?.note}}</td>
+                        <tr *ngFor="let list of data?.skills">
+                            <td>{{list.skill}}</td>
+                            <td>{{list.proficiency}}</td>
+                            <td>{{list.note}}</td>
                         </tr> 
                     </tbody>
                 </table>
@@ -134,11 +134,16 @@
     <div class="services-container">
         <h2 class="section-title">My Services</h2>
         <div class="services-grid">
-            <!-- Service 3 -->
-            <div class="service-card" *ngFor="let list of data.services">
-                <i class={{list?.icon}}></i>
-                <h3>{{list?.type}}</h3>
-                <p>{{list?.description}}<p>
+            <!-- Services  -->
+            <div class="service-card" *ngFor="let list of data?.services">
+                <div class="service-content">
+                    <i class="{{list.icon}}"></i>
+                    <h3>{{list.type}}</h3>
+                    <p>{{list.description}}</p>
+                </div>
+                <div class="service-category">
+                    {{list.categories}}
+                </div>
             </div>
         </div>
     </div>
@@ -166,13 +171,13 @@
         </div>
         <div class="projects-grid">
                <!-- Project Card -->
-               <div class="project-card" *ngFor="let project of data.projects" [attr.data-category]="project.category">
+               <div class="project-card" *ngFor="let project of data?.projects" [attr.data-category]="project.category">
                 <div class="project-info">
                     <div class="project-header">
-                        <h3>{{project?.title}}</h3>
-                        <button class="project-action-btn"><i class="ti-more" (click)="goToProjectDetails(project?.id)"></i></button>
+                        <h3>{{project.title}}</h3>
+                        <button class="project-action-btn"><i class="ti-more" (click)="goToProjectDetails(project.id)"></i></button>
                     </div>
-                    <p>{{project?.description}}</p>
+                    <p>{{project.description}}</p>
                     <div class="project-tech">
                         <i class="ti-html5"></i>
                         <i class="ti-css3"></i>
@@ -182,8 +187,12 @@
                         <i class="ti-mobile"></i>
                     </div>
                     <div class="project-links">
-                        <a href="{{project?.github}}" class="btn">View Code <i class="ti-github"></i></a>
-                        <a href="{{project?.demo}}" class="btn">Live Demo <i class="ti-link"></i></a>
+                        <a href="{{ project.githubLink }}" class="btn">
+                            <i class="ti-github"></i> View Code 
+                        </a>
+                        <a href="{{ project.demo }}" class="btn">
+                            <i class="ti-link"></i> Live Demo  
+                        </a>
                     </div>
                 </div>
             </div>
@@ -199,9 +208,9 @@
             <!-- Contact Info -->
             <div class="contact-info">
                 <h3><i class="ti-email"></i> Contact Information</h3>
-                <p><i class="ti-location-pin"></i>{{data.personal?.location}}</p>
-                <p><i class="ti-email"></i> {{data.personal?.email}}</p>
-                <p><i class="ti-mobile"></i>{{data.personal?.phone}}</p>
+                <p><i class="ti-location-pin"></i>{{data?.personal.location}}</p>
+                <p><i class="ti-email"></i> {{data?.personal.email}}</p>
+                <p><i class="ti-mobile"></i>{{data?.personal.phone}}</p>
                 <ul class="social-icons">
                     <li><a><i class="ti-facebook"></i></a></li>
                     <li><a><i class="ti-twitter"></i></a></li>

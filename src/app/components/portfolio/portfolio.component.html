@@ -16,7 +16,7 @@
 
         <div class="projects-grid">
             <!-- Project Card -->
-            <div class="project-card" *ngFor="let project of data.projects" [attr.data-category]="project.category">
+            <div class="project-card" *ngFor="let project of data?.projects" [attr.data-category]="project.category">
                 <div class="project-info">
                     <div class="project-header">
                         <h3>{{project.title}}</h3>

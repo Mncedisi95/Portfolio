@@ -80,3 +80,23 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+.service-category {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #008080;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-card:hover .service-category {
+    opacity: 1
+}
+
+.service-card:hover .service-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}

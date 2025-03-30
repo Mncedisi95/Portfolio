@@ -9,16 +9,16 @@
         <!-- Combined About Content -->
         <div class="about-content">
             <h2>Hi, I'm <span class="highlight">Mncedisi Masondo</span></h2>
-            <p>I am a recent IT graduate with a passion for software development and problem-solving. Welcome to my portfolio, where I showcase my projects, skills, and experiences. With a strong foundation in computer science and informatics, and a keen interest in full-stack development, I'm excited to contribute to the tech industry.</p>
+            <p>{{data?.personal.summary}}</p>
             
             <h3>My Educational Journey</h3>
-            <p>I earned my <strong>Bachelor of Science degree in Information Technology (Computer Science and Informatics)</strong> from the University of Johannesburg in April 2022. My coursework included Data Structures, Algorithms, Computer Systems, Advanced Data Structures, Web Development, and Database Management.</p>
+            <p>{{data?.personal.educational}}</p>
             
             <h3>CodeTribe Academy Experience</h3>
-            <p>I joined CodeTribe Academy for an intensive six-month full-stack development program, from <strong>August 15, 2024, to February 15, 2025</strong>. During this time, I worked on real-world projects, honed my UI/UX design skills, and explored cloud deployment strategies.</p>
+            <p>{{data?.personal.experience}}</p>
             
             <h3>Aspiring Goals</h3>
-            <p>My goal is to leverage my technical skills and problem-solving abilities to create impactful software solutions. I am eager to collaborate on innovative projects, contribute to the tech community, and continuously grow as a software developer.</p>
+            <p>{{data?.personal.goals}}</p>
             
             <p>Feel free to explore my portfolio and reach out for collaborations, projects, or job opportunities!</p>
             
@@ -29,7 +29,7 @@
 
         <!-- About Image (on Right Hand Side) -->
         <div class="about-image">
-            <img src="assets/img/Masondo.jpg" alt="Mncedisi Masondo - Professional Photo">
+            <img [src]= "data?.personal.profile" alt="Mncedisi Masondo - Professional Photo">
         </div>
     </div>
 </section>

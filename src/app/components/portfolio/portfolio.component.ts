@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IProjects } from '../../Model/IProjects';
 import { ProjectsService } from '../../services/projects.service';
 import { NgFor } from '@angular/common';
 import { Router } from '@angular/router';

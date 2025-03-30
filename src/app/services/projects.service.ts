@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, map, Observable, of } from 'rxjs';
-import { IProjects } from '../Model/IProjects';
 
 /**
  * Service Responsible for Fecting all projects from the json file
@@ -12,18 +11,20 @@ import { IProjects } from '../Model/IProjects';
 })
 export class ProjectsService {
 
-  // property declaration
-  private dataUrl = 'assets/data/dataset.json'
+  /** @property {string } dataUrl */ 
+
+  private dataUrl : string = 'assets/data/dataset.json'
 
   /**
-   * @param httpClient 
-   */
+  * @constructor
+  * @param { HttpClient } httpClient 
+  */
   constructor(private httpClient: HttpClient) { }
 
   /**
+   * @method getData
    * @description helper function that fetch all projects from the json file
-   * 
-   * @returns list of projects
+   * @returns 
    */
   getData(): Observable<any> {
     // send a get request
@@ -32,7 +33,7 @@ export class ProjectsService {
 
   /**
    * @method getProjectByID
-   * @param projectId 
+   * @param {number} projectId 
    * @description
    * @returns 
    */
@@ -44,14 +45,12 @@ export class ProjectsService {
           console.error('Projects data not found');
           return null;
         }
-        
         return data.projects.find((project: any) => project.id === projectId) || null 
- 
       }),
       catchError(error => {
         console.error('Error fetching project:', error);
         return of(null);
       })
-    );
+    )
   }
 }

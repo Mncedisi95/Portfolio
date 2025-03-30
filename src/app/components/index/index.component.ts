@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { ProjectsService } from '../../services/projects.service';
 import { CommonModule, NgFor } from '@angular/common';
-import { Router } from '@angular/router';
-
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [CommonModule,NgFor],
+  imports: [CommonModule,NgFor,RouterLink],
   templateUrl: './index.component.html',
   styleUrl: './index.component.css'
 })
@@ -31,6 +30,7 @@ export class IndexComponent {
     // call the helper function from project service to fetch projects data
     this.projectService.getData().subscribe({
       next: (data) => {
+        
         this.data = data // Assign fetched data to the component's variable
       },
       error: (error) => {
