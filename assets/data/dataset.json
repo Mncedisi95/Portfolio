@@ -1,0 +1,285 @@
+{
+    "personal": {
+        "name": "Mncedisi Masondo",
+        "email": "mncedisimasondo4@gmail.com",
+        "phone": "+27 83 623 7153",
+        "location": "5066 Zone 5 Zonkizizwe, Katlhong, Johannesburg",
+        "summaryHeader": "A Software Developer Passionate About Building Scalable Solutions",
+        "summary": "Hey, I'm Mncedisi, a passionate software developer with a strong foundation in computer science and informatics. I thrive on problem-solving and building impactful software solutions. This portfolio showcases my projects, skills, and experiences in full-stack development. With a keen interest in innovation and technology, I'm eager to contribute to the ever-evolving tech industry.",
+        "profile": "assets/img/Masondo.jpg",
+        "educational": "I earned my Bachelor of Science degree in Information Technology (Computer Science and Informatics) from the University of Johannesburg in April 2022. My coursework included Data Structures, Algorithms, Computer Systems, Advanced Data Structures, Web Development, and Database Management",
+        "experience":"I joined CodeTribe Academy for an intensive six-month full-stack development program, from August 15, 2024, to February 15, 2025. During this time, I worked on real-world projects, honed my UI/UX design skills, and explored cloud deployment strategies.",
+        "goals": "My goal is to leverage my technical skills and problem-solving abilities to create impactful software solutions. I am eager to collaborate on innovative projects, contribute to the tech community, and continuously grow as a software developer."
+    },
+    "expertise": [
+        {
+            "id": 1,
+            "category": "Web & Mobile Development",
+            "icon": "ti-world",
+            "description": "Crafting modern and responsive web and mobile applications using TypeScript, Java, and C# to deliver seamless user experiences."
+        },
+        {
+            "id": 2,
+            "category": "Custom Software Solutions",
+            "icon": "ti-settings",
+            "description": "Providing tailored software solutions for businesses in e-commerce, education, real estate, and logistics, ensuring efficiency and scalability"
+        },
+        {
+            "id": 3,
+            "category": "Full-Stack Development",
+            "icon": "ti-layers",
+            "description": "Building complete web applications from frontend to backend, ensuring smooth integration, performance, and scalability"
+        },
+        {
+            "id": 4,
+            "category": "Database Management",
+            "icon": "ti-server",
+            "description": "Designing and managing efficient databases using SQL Server to store, retrieve, and process data effectively."
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "year": "Aug 2024 - Feb 2025",
+            "icon": "ti-desktop ti-icons-color",
+            "academicBackground": "Online Codetribe Program (Web and App Development)",
+            "description": "Completed a 6-month intensive hands-on training program from August 15, 2024, to February 15, 2025, covering full-stack development, UI/UX design, and cloud deployment."
+        },
+        {
+            "id": 2,
+            "year": "Feb 2017 - Dec 2021",
+            "icon": "ti-book ti-icons-color",
+            "academicBackground": "Bachelor's Degree in IT in Computer Science & Informatics",
+            "description": "Earned a four-year degree from the University of Johannesburg, gaining in-depth knowledge and hands-on experience in software development."
+        },
+        {
+            "id": 3,
+            "year": "Jan 2009 - Dec 2013",
+            "icon": "ti-medall ti-icons-color",
+            "academicBackground": "National Senior Certificate",
+            "description": "Graduated with a solid foundation in Physical Science, Mathematics, and Life Sciences, demonstrating strong analytical and problem-solving skill"
+        }
+    ],
+    "skills": [
+        {
+            "skill": "TypeScript",
+            "proficiency": "Beginner",
+            "note": "Comfortable with OOP, type safety, and modern frameworks like Ionic, Angular"
+        },
+        {
+            "skill": "HTML",
+            "proficiency": "Intermediate",
+            "note": "Strong in semantic HTML, accessibility, and structuring complex UIs."
+        },
+        {
+            "skill": "CSS",
+            "proficiency": "Intermediate",
+            "note": "Proficient in animations, Flexbox, Grid, and responsive design."
+        },
+        {
+            "skill": "Javascript",
+            "proficiency": "Beginner",
+            "note": "Basic understanding of DOM manipulation, and event handling."
+        }
+    ],
+    "services": [
+        {
+            "type": "Web Development",
+            "icon": "ti-world",
+            "description": "Building dynamic, responsive, and high-performance websites tailored to business needs.",
+            "categories": [
+                "Full-Stack Web Applications",
+                "Front Development(HTML,CSS,Typescipt,Angular)",
+                "API Development & Integration"
+            ]
+        },
+        {
+            "type": "Mobile App Development",
+            "icon": "ti-mobile",
+            "description": "Developing user-friendly, feature-rich mobile applications for businesses and startups.",
+            "categories": [
+                "Native Apps (Android, iOS)",
+                "Cross-Platform Apps (Ionic)",
+                "Hybrid Mobile Apps"
+            ]
+        },
+        {
+            "type": "Database & Cloud Services",
+            "icon": "ti-server",
+            "description": "Scalable, secure, and optimized database and cloud solutions to support business operations and data management.",
+            "categories": [
+                "Cloud Database Management (Firestore)",
+                "SQL & NoSQL Databases (SQL Server)",
+                "Cloud Integration (Firebase)"
+            ] 
+        },
+        {
+            "type": "E-Commerce Solutions",
+            "icon": "ti-shopping-cart",
+            "description": "Building powerful online stores with secure payment gateways and advanced functionalities.",
+            "categories": [
+                "Custom E-Commerce Platforms",
+                "Shopify & WooCommerce Development",
+                "Payment Gateway Integration"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "category": "Project 1 - Individual Project",
+            "title": "SuiteSync",
+            "technologies": {
+                "Front-End": "Angular & Typescript",
+                "Styling": "CSS, Themify Icons & Material UI",
+                "Back-End":  "Typescript & Firebase firestore (Cloud NoSQL Database)",
+                "Authentication": "Firebase Authentication",
+                "Deployment": "Firebase",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "SuiteSync is a comprehensive hotel management system designed to streamline daily operations, enhance guest experiences, and optimize administrative processes. It offers real-time booking management, seamless payment processing, and in-depth analytics. With an intuitive interface and automation capabilities, SuiteSync simplifies reservations, billing, and staff coordination, ensuring efficiency and improved customer satisfaction.",
+            "outcome": "SuiteSync delivers scalability and flexibility, enabling hotels of all sizes to adapt to dynamic demands. The system automates workflows to reduce manual effort, enhances job search and recruitment within the hospitality sector, and optimizes job postings for better visibility. Additionally, its data-driven insights empower hotels to make informed business decisions, ultimately improving operational efficiency and revenue growth.",
+            "challenge": "Ensuring smooth performance and real-time updates while minimizing Firebase read/write costs.",
+            "solution": "Implemented batched writes and Firestore caching to reduce API calls and improve efficiency. Also used onSnapshot listeners to update tasks instantly without unnecessary re-fetching.",
+            "githubLink": "https://github.com/Mncedisi95/firebase",
+            "demo": "https://fir-6122b.web.app",
+            "features": [
+                {
+                    "title": "Real-time Room Booking",
+                    "icon": "ti ti-bookmark",
+                    "description": "Customers can book rooms instantly with live availability updates."
+                },
+                {
+                    "title": "Automated Invoicing",
+                    "icon": "ti ti-credit-card",
+                    "description": "Invoices are generated automatically for each booking."
+                },
+                {
+                    "title": "Analytics Dashboard",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Get insights into hotel performance with real-time reports."
+                },
+                {
+                    "title": "Role-based Access",
+                    "icon": "ti ti-lock",
+                    "description": "Staff members have different access levels for security."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "category": "Project 1 - Individual Project",
+            "title": "Fakestore",
+            "technologies": {
+                "Fontend": "Angular, Typescript",
+                "Styling": "CSS & Material UI",
+                "API Integration": "FakeStore API (RESTful API for product management",
+                "Authentication": "FakeStore API",
+                "Deployment": "Github Pages",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "An Admin Dashboard for managing products in an e-commerce platform powered by the FakeStore API. The dashboard provides administrators with a user-friendly interface to view, add, update, and delete products from the store. It simplifies product management by offering real-time updates and, ensuring smooth backend operations for the e-commerce system.",
+            "outcome": "The system empowers administrators with scalability and flexibility, allowing seamless management of product catalogs, pricing.Through automated workflows, tasks such as inventory updates, reducing manual workload and operational delays. The centralized dashboard provides real-time insights into sales performance, stock levels, and customer trends, enabling data-driven decision-making to optimize business strategies. Additionally, secure user authentication and role-based access ensure controlled permissions for admins, staff, and vendors, enhancing system security and operational efficiency.",
+            "challenge": "Handling API request delays and maintaining UI responsiveness.",
+            "solution": "Implemented loading states and optimistic updates to ensure a smooth user experience, reducing perceived latency.",
+            "githubLink": "https://github.com/Mncedisi95/fakestore",
+            "demo": "https://mncedisi95.github.io/fakestore/",
+            "features": [
+                {
+                    "title": "Product Management ",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, update, and delete products via FakeStore API."
+                },
+                {
+                    "title": "Category Filtering",
+                    "icon": "ti ti-credit-card",
+                    "description": "Sort and filter products by category"
+                },
+                {
+                    "title": "User Authentication",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Secure login/logout functionality for admins."
+                },
+                {
+                    "title": "Real-time Updates ",
+                    "icon": "ti ti-lock",
+                    "description": "API-integrated changes reflect instantly on the frontend."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "category": "Project 3 - Individual Project",
+            "title": "Todo List (Web App)",
+            "technologies": {
+                "Fontend": "Angular, Typescript",
+                "Styling": "CSS",
+                "Backend": "JSON Server (Mock REST API)",
+                "Data Storage": "JSON File (acts as a database",
+                "Deployment": "GitHub pages (Frontend), Local JSON Server",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": "Todo List Web App that stores and manages tasks using a JSON file as a database powered by JSON Server. It allows users to add, update, delete, and mark tasks as completed while persisting data in a simulated backend. The app is lightweight, fast, and ideal for learning API integration and local storage solutions.",
+            "outcome": "The To-Do List Web App enhances productivity by providing an intuitive and efficient task management system. Users can easily create, update, and track tasks, ensuring better organization and time management.",
+            "challenge": "Handling data persistence and avoiding loss of tasks on page refresh.",
+            "solution": "Used JSON Server as a local backend to store data persistently, ensuring tasks remain available even after a browser refresh.",
+            "githubLink": "https://github.com/Mncedisi95/assessment-two",
+            "demo": "https://mncedisi95.github.io/assessment-two/",
+            "features": [
+                {
+                    "title": "Task Management ",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, edit, delete, and mark tasks as completed."
+                },
+                {
+                    "title": "Persistent Data Storage",
+                    "icon": "ti ti-credit-card",
+                    "description": "Tasks are saved in a JSON file and retrieved via JSON Server"
+                },
+                {
+                    "title": "RESTful API Integration",
+                    "icon": "ti ti-bar-chart",
+                    "description": "Fetch, create, update, and delete tasks using API calls."
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "category": "Project 3 - Individual Project",
+            "title": "Todo List (Mobile App)",
+            "technologies": {
+                "Fontend": "Angular, Ionic, Javascript & Typescript",
+                "Styling": "CSS & Ionic UI",
+                "Backend": "Firebase Firestore (Cloud NoSQL Database)",
+                "Authentication": "Firebase Authentication",
+                "Software Tools": "Visual Studio, GitHub"
+            },
+            "description": " a cross-platform Todo List Mobile App that enables users to add, update, delete, and organize tasks in real-time using Firebase Firestore as the backend. The app provides seamless synchronization across multiple devices, allowing users to manage their tasks efficiently from anywhere. It is designed with a clean UI and smooth animations for better user experience.",
+            "outcome": "The To-Do List Mobile App boosts productivity by offering a seamless and accessible task management experience on the go. With a user-friendly interface, users can effortlessly create, update, and track their tasks anytime, anywhere. The app enhances time management with smart reminders, priority tagging, and calendar integration, making daily planning more efficient and stress-free.",
+            "challenge": "Ensuring smooth performance and real-time updates while minimizing Firebase read/write costs.",
+            "solution": "Implemented batched writes and Firestore caching to reduce API calls and improve efficiency. Also used onSnapshot listeners to update tasks instantly without unnecessary re-fetching.",
+            "githubLink": "https://github.com/Mncedisi95/todo-list",
+            "demo": "",
+            "features": [
+                {
+                    "title": "Real-time Task Management",
+                    "icon": "ti ti-bookmark",
+                    "description": "Add, edit, delete, and mark tasks as completed with instant cloud updates."
+                },
+                {
+                    "title": "User Authentication",
+                    "icon": "ti ti-credit-card",
+                    "description": "Secure login/signup using Firebase Authentication"
+                }
+            ]
+        }
+    ],
+    "jobs": [
+        {
+            "duration": "2024 Aug - 2025 Feb",
+            "title": "Software Development",
+            "icon" : "ti-layers ti-icons-color",
+            "description": "During my Learnership at mLab (CodeTribe), I gained hands-on experience in software development using Firestore, Angular, Ionic Framework, and TypeScript. I developed individual projects, focusing on building and optimizing web and mobile applications, enhancing my skills in frontend and backend development within a real-world environment."
+        }
+    ]
+}
